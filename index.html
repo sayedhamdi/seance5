@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #registred,
+      #vaccinated {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      #registred div,
+      #vaccinated div {
+        border: 5px solid orange;
+        background: blue;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
+      }
+      #registred div button {
+        color: blue;
+        background: orange;
+        border: 3px solid orange;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+      #vaccinated div button {
+        color: white;
+        background: red;
+        border: 3px solid orange;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+      #registred div span,
+      #vaccinated div span {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      #registred div button:hover {
+        background: rgb(34, 34, 234);
+        color: white;
+      }
+      #vaccinated div button:hover {
+        background: rgb(197, 81, 81);
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+      .add-btn {
+        width: 150px;
+      }
+      h1 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" />
+      <button class="add-btn">click</button>
+      <h1>registred</h1>
+      <div id="registred"></div>
+      <h1>vaccinated</h1>
+      <div id="vaccinated"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
